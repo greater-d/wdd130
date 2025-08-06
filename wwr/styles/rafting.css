@@ -11,8 +11,19 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    padding: 20px;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2rem;
 }
+
+header img {
+    height: auto;  
+    width: 100px;
+    display:block;
+}
+
 
 * {
     margin: 0;
@@ -44,13 +55,9 @@ nav, p, section, article {
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end ;
     align-items: center;
     gap: 20px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -80,13 +87,15 @@ nav {
 
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 1px;
+    left: auto;
     background-color: rgba(0, 180, 216, 0.8); /* semi-transparent */
     padding: 12px;
     color: #fff;
-    max-width: 400px;
+    display: flex;
+    align-items:center;
     z-index: 1;
+
 }
 
 
@@ -96,19 +105,63 @@ nav {
     margin-left: 10px;
 }
 
-section {
-    margin-bottom: 32px;
+section > h2 {
+  text-align: center;
+  color: var(--secondary-color);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.adventure {
+  justify-content: center;
+  text-align: center;
 }
 
-.gallery {
+.adventure-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  margin-top: 12px;
+  align-items: start;
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;  
+  object-fit: cover;
+  border-radius: 4px;
+  background: #eee;
+  display: block;
+}
+
+footer {
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+    padding: 1rem 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem ;
+}
+
+footer .socialmedia {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: left;
-  padding: 16px;
+  gap: 1rem;
 }
+
+footer .socialmedia a img {
+    width: 28px;
+    height: 28px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/*footer .socialmedia a:hover img {
+  transform: scale(1.1);
+} */
