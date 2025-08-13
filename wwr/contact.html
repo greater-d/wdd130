@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Raft-X Nigeria | Get in Touch</title>
+  <meta name="description" content="Contact Raft-X Nigeria for questions, reservations, or suggestions. Call, email, or use our contact form.">
+  <meta name="author" content="Chukwunyere Daniel">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+  <!-- Header & Global Navigation (shared across site) -->
+  <header>
+    <img src="images/rafting-logo.jpg" alt="Raft-X Nigeria logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html" class="active">Contact Us</a>
+    </nav>
+  </header>
+
+  <main class="contact-layout">
+    <!-- Left Column: Company Info + Map + Team -->
+    <section class="company-info" aria-labelledby="contact-info-heading">
+      <h2 id="contact-info-heading">Contact Information</h2>
+
+      <address>
+        <p><strong>Address:</strong> No. 41 Computer Village, Ikeja, Lagos State.</p>
+        <p><strong>Phone:</strong> <a href="tel:+2348055512345">+234-80555-12345</a></p>
+        <p><strong>Email:</strong> <a href="mailto:dchukwunyere@byupathway.com">dchukwunyere@byupathway.com</a></p>
+      </address>
+
+      <!-- Embedded Google Map (no inline style attribute) -->
+      <div class="map-container">
+        <iframe
+          title="Map showing Computer Village, Ikeja"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.3800815117775!2d3.343059973838424!3d6.59623479340466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b92bf90f79f5f%3A0x7af38d7cc3ef77b!2sComputer%20Village!5e0!3m2!1sen!2sng!4v1692345678901!5m2!1sen!2sng"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section class="team" aria-labelledby="team-heading">
+      <h2 id="team-heading">Meet Our Friendly Team</h2>
+      <div class="employee-grid">
+        <figure class="employee-card">
+          <img src="images/employee1.jpg" alt="Smiling guide, Mr. Daniel">
+          <figcaption>Mr. Daniel — Lead Rafting Guide</figcaption>
+        </figure>
+        <figure class="employee-card">
+          <img src="images/employee2.jpg" alt="Happy customer service manager, Feiicia Licia">
+          <figcaption>Felicia Licia — Customer Service Manager</figcaption>
+        </figure>
+        <figure class="employee-card">
+          <img src="images/employee3.jpg" alt="Cheerful tour coordinator, Mr. Valentine">
+          <figcaption>Mr. Valentine — Tour Coordinator</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Right Column: Contact Form -->
+    <section class="contact-form" aria-labelledby="form-heading">
+      <h2 id="form-heading">Send Us a Message</h2>
+
+      <form action="#" method="post">
+        <!-- Name -->
+        <div class="form-field">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <!-- Email -->
+        <div class="form-field">
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <!-- Purpose (radio group) -->
+        <fieldset class="form-field">
+          <legend>Purpose of Message</legend>
+          <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+        </fieldset>
+
+        <!-- Message -->
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="form-field checkbox">
+          <label><input type="checkbox" name="newsletter">Please subscribe me to the monthly newsletter</label>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer (shared across site) -->
+  <footer>
+    <p>&copy; 2025 Raft-X Nigeria | Chukwunyere Daniel</p>
+    <a href="images/raftx-contact-wireframe.jpg" class="footer-wireframe" target="_blank">View Contact Page Wireframe</a>
+    <nav class="socialmedia">
+      <a href="https://facebook.com" target="_blank" rel="noopener">
+        <img src="images/facebook.webp" alt="Facebook logo">
+      </a>
+      <a href="https://twitter.com" target="_blank" rel="noopener">
+        <img src="images/twitter.webp" alt="Twitter logo">
+      </a>
+      <a href="https://instagram.com" target="_blank" rel="noopener">
+        <img src="images/instagram.webp" alt="Instagram logo">
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>

@@ -162,6 +162,61 @@ footer .socialmedia a img {
     transition: transform 0.3s ease;
 }
 
-/*footer .socialmedia a:hover img {
+footer .socialmedia a:hover img {
   transform: scale(1.1);
-} */
+} 
+
+/* === Contact Page Layout === */
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.company-info,
+.team,
+.contact-form {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Employee Cards */
+.employee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.employee-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent1-color);
+}
+
+.employee-card figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Footer Wireframe Link */
+.footer-wireframe {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.footer-wireframe:hover {
+  background-color: var(--accent1-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+}
